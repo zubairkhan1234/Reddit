@@ -1,0 +1,28 @@
+.App_all_posts{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 50px;
+
+}
+
+.App_posts{
+    width: 70%;
+    background-color: white;
+    margin-bottom: 20px;
+    border: 2px solid rgb(155, 154, 154);
+}
+.App_posts .post_child{
+    display: flex;
+box-sizing: border-box;
+}
+.post_child>.post_left{
+    padding:50px 5px;
+    width: 5%;
+    background-color: rgb(224, 220, 220);
+}
+
+.post_child>.post_right{
+    margin: 10px 5px;
+    width: 95%;
+}
+

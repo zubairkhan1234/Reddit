@@ -1,6 +1,7 @@
 
 import Login from "./Components/login/login";
 import Dashboard from "./Components/dashboard/dashboard";
+import css from './App.css'
 
 import React from "react";
 import {
@@ -12,23 +13,18 @@ import {
 
 function App() {
   return (
-    <div className="App">
-      {/* <h1>hello world</h1>
-      <Login />
-      <Dashboard /> */}
-
+    <div className="App_body">
 
       <Router>
-        <div>
-          <ul>
-            <li>
-              <Link exact to="/">login</Link>
-            </li>
-            <li>
-              <Link to="/dashboard">Dashboard</Link>
-            </li>
-          </ul>
-          <hr />
+        <div >
+          <div className="App">
+            <div><img className="App_logo" src="https://logodownload.org/wp-content/uploads/2018/02/reddit-logo.png" /></div>
+            <div><input type="text" placeholder="Search" className="search" className="App_search" /></div>
+            <div>
+              <Link exact className="log_button" to="/">login</Link>
+              <Link exact className="dash_button" to="/dashboard">Dashboard</Link>
+            </div>
+          </div>
           <Switch>
             <Route exact path="/">
               <Login />
